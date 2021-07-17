@@ -1,4 +1,8 @@
 @charset "UTF-8";
+h2 {
+  margin: 0;
+}
+
 body {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
   font-weight: 500;
@@ -52,8 +56,15 @@ body {
           clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
 }
 
-footer {
-  background: green;
+.message .messageComment h2 {
+  font-size: 95px;
+  letter-spacing: 0.1rem;
+}
+
+.message .messageComment p {
+  font-size: 18px;
+  color: #9fa0a0;
+  font-weight: bold;
 }
 
 .employee {
@@ -115,5 +126,9 @@ footer {
 
 .welcome .welcomeComment p {
   color: #6e767a;
+}
+
+.welcome footer {
+  background: green;
 }
 /*# sourceMappingURL=style.css.map */

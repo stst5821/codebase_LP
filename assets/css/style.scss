@@ -1,6 +1,10 @@
 $blue: #3bbfce;
 $margin: 16px;
 
+h2 {
+  margin: 0;
+}
+
 body {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
   font-weight: 500;
@@ -30,8 +34,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    h2 {
-    }
+
     p {
       line-height: 3rem;
       letter-spacing: 0.1rem;
@@ -42,8 +45,22 @@ body {
   }
 }
 
-footer {
-  background: green;
+// message
+
+.message {
+  .messageComment {
+    h2 {
+      font-size: 95px;
+      letter-spacing: 0.1rem;
+    }
+    p {
+      font-size: 18px;
+      color: #9fa0a0;
+      font-weight: bold;
+    }
+  }
+  .shachoImg {
+  }
 }
 
 // employee
@@ -93,5 +110,11 @@ footer {
     p {
       color: #6e767a;
     }
+  }
+
+  // footer
+
+  footer {
+    background: green;
   }
 }
