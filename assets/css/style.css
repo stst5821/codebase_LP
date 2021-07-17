@@ -10,11 +10,12 @@ body {
 }
 
 .navbar {
-  background-color: blue;
+  background-color: #84bae0;
 }
 
 .Mv {
   background-color: orange;
+  margin-bottom: 10rem;
 }
 
 .Mv img {
@@ -31,6 +32,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 10rem;
 }
 
 .about .aboutMessage {
@@ -56,15 +58,49 @@ body {
           clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
 }
 
-.message .messageComment h2 {
-  font-size: 95px;
-  letter-spacing: 0.1rem;
+.message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  margin-bottom: 10rem;
 }
 
-.message .messageComment p {
+.message .messageComment {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+}
+
+.message .messageComment .messegeWrapper h2 {
+  background-color: #84bae0;
+  font-size: 95px;
+  letter-spacing: 0.5rem;
+  font-family: "Franklin Gothic Medium", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.message .messageComment .messegeWrapper p {
   font-size: 18px;
   color: #9fa0a0;
   font-weight: bold;
+  margin: 0;
+}
+
+.message .messageComment img {
+  position: absolute;
+  top: 13rem;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+.message .shachoImg {
+  margin-right: 5rem;
 }
 
 .employee {
