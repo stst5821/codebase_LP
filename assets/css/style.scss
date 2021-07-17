@@ -1,6 +1,10 @@
 $blue: #3bbfce;
 $margin: 16px;
 
+body {
+  margin: 0;
+}
+
 .navbar {
   background-color: blue;
 }
@@ -16,4 +20,30 @@ $margin: 16px;
 
 footer {
   background: green;
+}
+
+// welcome
+
+.welcome {
+  background-color: paleturquoise;
+  .clover {
+    display: flex;
+    flex-wrap: wrap;
+    width: 420px;
+    img {
+      margin: 5px;
+    }
+    .img1 {
+      border-radius: 50% 50% 0 50%;
+    }
+    .img2 {
+      border-radius: 50% 50% 50% 0;
+    }
+    .img3 {
+      border-radius: 50% 0 50% 50%;
+    }
+    .img4 {
+      border-radius: 0 50% 50% 50%;
+    }
+  }
 }

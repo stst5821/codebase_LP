@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .navbar {
   background-color: blue;
 }
@@ -15,5 +19,38 @@
 
 footer {
   background: green;
+}
+
+.welcome {
+  background-color: paleturquoise;
+}
+
+.welcome .clover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 420px;
+}
+
+.welcome .clover img {
+  margin: 5px;
+}
+
+.welcome .clover .img1 {
+  border-radius: 50% 50% 0 50%;
+}
+
+.welcome .clover .img2 {
+  border-radius: 50% 50% 50% 0;
+}
+
+.welcome .clover .img3 {
+  border-radius: 50% 0 50% 50%;
+}
+
+.welcome .clover .img4 {
+  border-radius: 0 50% 50% 50%;
 }
 /*# sourceMappingURL=style.css.map */
