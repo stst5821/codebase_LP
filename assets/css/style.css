@@ -1,4 +1,7 @@
+@charset "UTF-8";
 body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -21,8 +24,18 @@ footer {
   background: green;
 }
 
+.employee {
+  background-color: seagreen;
+  height: 400px;
+}
+
 .welcome {
-  background-color: paleturquoise;
+  background-color: #f5f8fa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .welcome .clover {
@@ -35,7 +48,7 @@ footer {
 }
 
 .welcome .clover img {
-  margin: 5px;
+  margin: 4px;
 }
 
 .welcome .clover .img1 {
@@ -52,5 +65,22 @@ footer {
 
 .welcome .clover .img4 {
   border-radius: 0 50% 50% 50%;
+}
+
+.welcome .welcomeComment {
+  background-color: white;
+  text-align: center;
+  -webkit-clip-path: polygon(12% 0, 100% 0%, 100% 100%, 12% 100%, 0% 50%);
+          clip-path: polygon(12% 0, 100% 0%, 100% 100%, 12% 100%, 0% 50%);
+  width: 50%;
+}
+
+.welcome .welcomeComment h2 {
+  font-size: 36px;
+  color: #20abeb;
+}
+
+.welcome .welcomeComment p {
+  color: #6e767a;
 }
 /*# sourceMappingURL=style.css.map */

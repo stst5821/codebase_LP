@@ -2,6 +2,8 @@ $blue: #3bbfce;
 $margin: 16px;
 
 body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: 500;
   margin: 0;
 }
 
@@ -22,16 +24,25 @@ footer {
   background: green;
 }
 
+// employee
+
+.employee {
+  background-color: seagreen;
+  height: 400px;
+}
+
 // welcome
 
 .welcome {
-  background-color: paleturquoise;
+  background-color: #f5f8fa;
+  display: flex;
+  justify-content: space-around;
   .clover {
     display: flex;
     flex-wrap: wrap;
     width: 420px;
     img {
-      margin: 5px;
+      margin: 4px;
     }
     .img1 {
       border-radius: 50% 50% 0 50%;
@@ -44,6 +55,19 @@ footer {
     }
     .img4 {
       border-radius: 0 50% 50% 50%;
+    }
+  }
+  .welcomeComment {
+    background-color: white;
+    text-align: center;
+    clip-path: polygon(12% 0, 100% 0%, 100% 100%, 12% 100%, 0% 50%);
+    width: 50%;
+    h2 {
+      font-size: 36px;
+      color: #20abeb;
+    }
+    p {
+      color: #6e767a;
     }
   }
 }
