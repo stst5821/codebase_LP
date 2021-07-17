@@ -1,7 +1,19 @@
-.border {
-  padding: 8px;
-  margin: 8px;
-  border-color: #3bbfce;
-  color: red;
+.navbar {
+  background-color: blue;
+}
+
+.Mv {
+  background-color: orange;
+}
+
+.Mv img {
+  max-width: 100%;
+  max-height: 500px;
+  border-top-right-radius: 10rem;
+  border-bottom-right-radius: 40rem 20rem;
+}
+
+footer {
+  background: green;
 }
 /*# sourceMappingURL=style.css.map */
