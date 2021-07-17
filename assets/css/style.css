@@ -20,6 +20,37 @@ body {
   border-bottom-right-radius: 40rem 20rem;
 }
 
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about .aboutMessage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .aboutMessage p {
+  line-height: 3rem;
+  letter-spacing: 0.1rem;
+}
+
+.about .aboutImage {
+  -webkit-clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
+          clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
+}
+
 footer {
   background: green;
 }
@@ -30,7 +61,7 @@ footer {
 }
 
 .welcome {
-  background-color: #f5f8fa;
+  background-color: #84bae0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,6 +76,7 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 420px;
+  padding: 1rem 0;
 }
 
 .welcome .clover img {

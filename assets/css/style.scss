@@ -20,6 +20,28 @@ body {
   }
 }
 
+// about
+
+.about {
+  display: flex;
+  justify-content: space-around;
+
+  .aboutMessage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+    }
+    p {
+      line-height: 3rem;
+      letter-spacing: 0.1rem;
+    }
+  }
+  .aboutImage {
+    clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
+  }
+}
+
 footer {
   background: green;
 }
@@ -34,13 +56,15 @@ footer {
 // welcome
 
 .welcome {
-  background-color: #f5f8fa;
+  background-color: #84bae0;
   display: flex;
   justify-content: space-around;
   .clover {
     display: flex;
     flex-wrap: wrap;
     width: 420px;
+    padding: 1rem 0;
+
     img {
       margin: 4px;
     }
