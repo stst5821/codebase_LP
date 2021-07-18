@@ -27,36 +27,39 @@ footer {
 // employee
 
 .employee {
-  background-color: seagreen;
-  height: 400px;
-}
-
-// welcome
-
-.welcome {
-  background-color: #9fc8e5;
-  display: flex;
-  justify-content: space-around;
   margin-bottom: 10rem;
-  .clover {
+  .employeeList {
     display: flex;
-    flex-wrap: wrap;
-    width: 420px;
-    padding: 4rem 0;
-    img {
-      margin: 4px;
+    justify-content: space-evenly;
+    .employeeBox {
+      background: white;
+      width: 15rem;
+      img {
+        border-radius: 100% 0% 100% 0% / 17% 91% 9% 83%;
+      }
+      .img2 {
+        margin-top: 8rem;
+      }
+      .img3 {
+        margin-top: 16rem;
+      }
+      .img4 {
+        margin-top: 24rem;
+      }
+      .employeeComment {
+        width: 15rem;
+        background: #074ea1;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+      }
     }
-    .img1 {
-      border-radius: 50% 50% 0 50%;
-    }
+
     .img2 {
-      border-radius: 50% 50% 50% 0;
     }
     .img3 {
-      border-radius: 50% 0 50% 50%;
     }
     .img4 {
-      border-radius: 0 50% 50% 50%;
     }
   }
   .welcomeComment {

@@ -25,51 +25,48 @@ footer {
 }
 
 .employee {
-  background-color: seagreen;
-  height: 400px;
-}
-
-.welcome {
-  background-color: #9fc8e5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   margin-bottom: 10rem;
 }
 
-.welcome .clover {
+.employee .employeeList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 420px;
-  padding: 4rem 0;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.welcome .clover img {
-  margin: 4px;
+.employee .employeeList .employeeBox {
+  background: white;
+  width: 15rem;
 }
 
-.welcome .clover .img1 {
-  border-radius: 50% 50% 0 50%;
+.employee .employeeList .employeeBox img {
+  border-radius: 100% 0% 100% 0% / 17% 91% 9% 83%;
 }
 
-.welcome .clover .img2 {
-  border-radius: 50% 50% 50% 0;
+.employee .employeeList .employeeBox .img2 {
+  margin-top: 8rem;
 }
 
-.welcome .clover .img3 {
-  border-radius: 50% 0 50% 50%;
+.employee .employeeList .employeeBox .img3 {
+  margin-top: 16rem;
 }
 
-.welcome .clover .img4 {
-  border-radius: 0 50% 50% 50%;
+.employee .employeeList .employeeBox .img4 {
+  margin-top: 24rem;
 }
 
-.welcome .welcomeComment {
+.employee .employeeList .employeeBox .employeeComment {
+  width: 15rem;
+  background: #074ea1;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.employee .welcomeComment {
   background-color: white;
   text-align: center;
   -webkit-clip-path: polygon(12% 0, 100% 0%, 100% 100%, 12% 100%, 0% 50%);
@@ -87,17 +84,17 @@ footer {
           justify-content: center;
 }
 
-.welcome .welcomeComment .welcomeCommentWrapper {
+.employee .welcomeComment .welcomeCommentWrapper {
   margin: 0 auto;
   width: 65%;
 }
 
-.welcome .welcomeComment .welcomeCommentWrapper h2 {
+.employee .welcomeComment .welcomeCommentWrapper h2 {
   font-size: 36px;
   color: #20abeb;
 }
 
-.welcome .welcomeComment .welcomeCommentWrapper p {
+.employee .welcomeComment .welcomeCommentWrapper p {
   color: #6e767a;
   letter-spacing: 0.2rem;
 }
