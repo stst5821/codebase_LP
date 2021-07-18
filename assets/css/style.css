@@ -1,3 +1,10 @@
+@charset "UTF-8";
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: 500;
+  margin: 0;
+}
+
 .navbar {
   background-color: blue;
 }
@@ -15,5 +22,80 @@
 
 footer {
   background: green;
+}
+
+.employee {
+  margin-bottom: 10rem;
+}
+
+.employee .employeeList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.employee .employeeList .employeeBox {
+  background: white;
+  width: 15rem;
+}
+
+.employee .employeeList .employeeBox img {
+  border-radius: 100% 0% 100% 0% / 17% 91% 9% 83%;
+}
+
+.employee .employeeList .employeeBox .img2 {
+  margin-top: 8rem;
+}
+
+.employee .employeeList .employeeBox .img3 {
+  margin-top: 16rem;
+}
+
+.employee .employeeList .employeeBox .img4 {
+  margin-top: 24rem;
+}
+
+.employee .employeeList .employeeBox .employeeComment {
+  width: 15rem;
+  background: #074ea1;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.employee .welcomeComment {
+  background-color: white;
+  text-align: center;
+  -webkit-clip-path: polygon(12% 0, 100% 0%, 100% 100%, 12% 100%, 0% 50%);
+          clip-path: polygon(12% 0, 100% 0%, 100% 100%, 12% 100%, 0% 50%);
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.employee .welcomeComment .welcomeCommentWrapper {
+  margin: 0 auto;
+  width: 65%;
+}
+
+.employee .welcomeComment .welcomeCommentWrapper h2 {
+  font-size: 36px;
+  color: #20abeb;
+}
+
+.employee .welcomeComment .welcomeCommentWrapper p {
+  color: #6e767a;
+  letter-spacing: 0.2rem;
 }
 /*# sourceMappingURL=style.css.map */
