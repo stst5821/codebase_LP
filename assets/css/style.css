@@ -3,6 +3,10 @@ h2 {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
   font-weight: 500;
@@ -176,12 +180,11 @@ body {
   line-height: 1.5rem;
 }
 
-.employee .welcomeComment {
-  background-color: white;
-  text-align: center;
-  -webkit-clip-path: polygon(12% 0, 100% 0%, 100% 100%, 12% 100%, 0% 50%);
-          clip-path: polygon(12% 0, 100% 0%, 100% 100%, 12% 100%, 0% 50%);
-  width: 50%;
+footer {
+  background-color: #84bae0;
+}
+
+footer .footerWrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,27 +192,33 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.employee .welcomeComment .welcomeCommentWrapper {
-  margin: 0 auto;
-  width: 65%;
+footer .footerWrapper p {
+  padding: 1rem;
+  font-size: 20px;
+  color: white;
+  background-color: #84bae0;
 }
 
-.employee .welcomeComment .welcomeCommentWrapper h2 {
-  font-size: 36px;
-  color: #20abeb;
+footer .footerWrapper .icon .fa-facebook-square {
+  color: #1877f2;
+  margin-right: 1rem;
 }
 
-.employee .welcomeComment .welcomeCommentWrapper p {
-  color: #6e767a;
-  letter-spacing: 0.2rem;
+footer .footerWrapper .icon .fa-twitter-square {
+  color: #1da1f2;
+  margin-right: 1rem;
 }
 
-.employee footer {
-  background: green;
+footer .footerWrapper .icon .fa-instagram-square {
+  color: #cf2e92;
+}
+
+footer .footerWrapper .copyright p {
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
