@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 body {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
   font-weight: 500;
@@ -154,6 +158,96 @@ body {
   }
 }
 
+// jobDescription
+
+.entry {
+  margin-bottom: 10rem;
+  .entryForm {
+    background: #074ea1;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+  .job {
+    width: 90%;
+    margin: 0 auto;
+    .jobDiscription {
+      line-height: 1.5rem;
+      margin: 2rem 0;
+    }
+  }
+  .submit {
+    width: 200px;
+    background: #074ea1;
+    color: white;
+    padding: 1rem 2rem;
+    margin: 4rem auto 0 auto;
+    display: grid;
+    place-content: center;
+  }
+
+  // inputform
+
+  input[type="submit"],
+  input[type="text"],
+  select,
+  textarea,
+  button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    border: none;
+  }
+
+  input[type="text"],
+  textarea {
+    background: #f8f8f8;
+    display: block;
+    font-size: 16px;
+    padding: 12px 15px;
+    width: 480px;
+    transition: 0.8s;
+    border-radius: 0;
+  }
+
+  input[type="text"]:focus,
+  textarea:focus {
+    background: #e9f5fb;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  textarea[name="content"] {
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #ccc;
+  }
+
+  .form-table {
+    width: 100%;
+  }
+
+  .form-table th,
+  .form-table td {
+    border: 1px solid #d7d7d7;
+    padding: 20px;
+  }
+
+  .form-table th {
+    background: #84bae0;
+    padding-left: 50px;
+    position: relative;
+    text-align: left;
+    width: 300px;
+    color: white;
+  }
+}
 // footer
 
 footer {

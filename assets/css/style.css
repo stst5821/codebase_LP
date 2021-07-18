@@ -7,6 +7,10 @@ a {
   text-decoration: none;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 body {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
   font-weight: 500;
@@ -178,6 +182,115 @@ body {
 
 .employee .employeeList .employeeBox .employeeComment p {
   line-height: 1.5rem;
+}
+
+.entry {
+  margin-bottom: 10rem;
+}
+
+.entry .entryForm {
+  background: #074ea1;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.entry .job {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.entry .job .jobDiscription {
+  line-height: 1.5rem;
+  margin: 2rem 0;
+}
+
+.entry .submit {
+  width: 200px;
+  background: #074ea1;
+  color: white;
+  padding: 1rem 2rem;
+  margin: 4rem auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.entry input[type="submit"],
+.entry input[type="text"],
+.entry select,
+.entry textarea,
+.entry button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+
+.entry input[type="text"],
+.entry textarea {
+  background: #f8f8f8;
+  display: block;
+  font-size: 16px;
+  padding: 12px 15px;
+  width: 480px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  border-radius: 0;
+}
+
+.entry input[type="text"]:focus,
+.entry textarea:focus {
+  background: #e9f5fb;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.entry textarea[name="content"] {
+  display: inline-block;
+  width: 100%;
+  height: 200px;
+}
+
+.entry input::-webkit-input-placeholder,
+.entry textarea::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+.entry input:-ms-input-placeholder,
+.entry textarea:-ms-input-placeholder {
+  color: #ccc;
+}
+
+.entry input::-ms-input-placeholder,
+.entry textarea::-ms-input-placeholder {
+  color: #ccc;
+}
+
+.entry input::placeholder,
+.entry textarea::placeholder {
+  color: #ccc;
+}
+
+.entry .form-table {
+  width: 100%;
+}
+
+.entry .form-table th,
+.entry .form-table td {
+  border: 1px solid #d7d7d7;
+  padding: 20px;
+}
+
+.entry .form-table th {
+  background: #84bae0;
+  padding-left: 50px;
+  position: relative;
+  text-align: left;
+  width: 300px;
+  color: white;
 }
 
 footer {
