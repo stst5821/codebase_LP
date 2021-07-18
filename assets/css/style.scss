@@ -34,13 +34,15 @@ footer {
 // welcome
 
 .welcome {
-  background-color: #f5f8fa;
+  background-color: #9fc8e5;
   display: flex;
   justify-content: space-around;
+  margin-bottom: 10rem;
   .clover {
     display: flex;
     flex-wrap: wrap;
     width: 420px;
+    padding: 4rem 0;
     img {
       margin: 4px;
     }
@@ -62,12 +64,21 @@ footer {
     text-align: center;
     clip-path: polygon(12% 0, 100% 0%, 100% 100%, 12% 100%, 0% 50%);
     width: 50%;
-    h2 {
-      font-size: 36px;
-      color: #20abeb;
-    }
-    p {
-      color: #6e767a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .welcomeCommentWrapper {
+      margin: 0 auto;
+      width: 65%;
+
+      h2 {
+        font-size: 36px;
+        color: #20abeb;
+      }
+      p {
+        color: #6e767a;
+        letter-spacing: 0.2rem;
+      }
     }
   }
 }

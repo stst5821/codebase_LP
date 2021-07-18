@@ -30,12 +30,13 @@ footer {
 }
 
 .welcome {
-  background-color: #f5f8fa;
+  background-color: #9fc8e5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 10rem;
 }
 
 .welcome .clover {
@@ -45,6 +46,7 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 420px;
+  padding: 4rem 0;
 }
 
 .welcome .clover img {
@@ -73,14 +75,30 @@ footer {
   -webkit-clip-path: polygon(12% 0, 100% 0%, 100% 100%, 12% 100%, 0% 50%);
           clip-path: polygon(12% 0, 100% 0%, 100% 100%, 12% 100%, 0% 50%);
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.welcome .welcomeComment h2 {
+.welcome .welcomeComment .welcomeCommentWrapper {
+  margin: 0 auto;
+  width: 65%;
+}
+
+.welcome .welcomeComment .welcomeCommentWrapper h2 {
   font-size: 36px;
   color: #20abeb;
 }
 
-.welcome .welcomeComment p {
+.welcome .welcomeComment .welcomeCommentWrapper p {
   color: #6e767a;
+  letter-spacing: 0.2rem;
 }
 /*# sourceMappingURL=style.css.map */
