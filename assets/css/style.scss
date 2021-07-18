@@ -103,14 +103,22 @@ body {
 
 .employee {
   margin-bottom: 10rem;
+
+  h2 {
+    font-size: 95px;
+    letter-spacing: 0.5rem;
+    font-family: "Franklin Gothic Medium", sans-serif;
+    margin-bottom: 5rem;
+  }
   .employeeList {
     display: flex;
     justify-content: space-evenly;
     .employeeBox {
       background: white;
-      width: 15rem;
+      display: flex;
+      flex-direction: column;
       img {
-        border-radius: 100% 0% 100% 0% / 17% 91% 9% 83%;
+        width: 300px;
       }
       .img2 {
         margin-top: 8rem;
@@ -122,11 +130,13 @@ body {
         margin-top: 24rem;
       }
       .employeeComment {
-        width: 15rem;
+        width: 300px;
         background: #074ea1;
         color: white;
         text-align: center;
-        padding: 1rem;
+        p {
+          line-height: 1.5rem;
+        }
       }
     }
 
