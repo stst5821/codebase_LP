@@ -1,5 +1,13 @@
-$blue: #3bbfce;
-$margin: 16px;
+$mb: 365px;
+
+@mixin mb {
+  @media screen and (max-width: $mb) {
+    @content;
+  }
+}
+
+// @include mb {
+// }
 
 h2 {
   margin: 0;
@@ -34,11 +42,17 @@ body {
 .Mv {
   position: relative;
   margin-bottom: 10rem;
+  @include mb {
+    margin-bottom: 5rem;
+  }
   .MvImage {
     img {
       max-width: 100%;
       max-height: 700px;
       clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+      @include mb {
+        clip-path: none;
+      }
     }
   }
   .MvComment {
@@ -46,11 +60,21 @@ body {
       position: absolute;
       top: 10rem;
       right: 20rem;
+      @include mb {
+        width: 50%;
+        top: 2rem;
+        right: 10rem;
+      }
     }
     .imgBottom {
       position: absolute;
       top: 20rem;
       right: 5rem;
+      @include mb {
+        width: 50%;
+        top: 5rem;
+        right: 1rem;
+      }
     }
   }
 }
@@ -61,18 +85,47 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 10rem;
+  @include mb {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
   .aboutMessage {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    .aboutPolocyImage {
+      @include mb {
+        margin: 0 auto 3rem auto;
+      }
+    }
     p {
       line-height: 3rem;
       letter-spacing: 0.1rem;
+      @include mb {
+        width: 95%;
+        margin: 0 auto;
+        line-height: 2rem;
+        letter-spacing: 0.1rem;
+        margin-bottom: 1rem;
+      }
+    }
+    img {
+      @include mb {
+        width: 90%;
+        margin: 0 auto;
+      }
     }
   }
   .aboutImage {
     clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
+    @include mb {
+      margin: 0 1rem;
+    }
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -83,13 +136,28 @@ body {
   justify-content: flex-end;
   position: relative;
   margin-bottom: 10rem;
-
+  @include mb {
+    flex-direction: column;
+    margin-bottom: 10rem;
+  }
+  .shachoWrapper {
+    margin-right: 5rem;
+    @include mb {
+      margin: 0 1rem;
+    }
+    .shachoFaceImage {
+      width: 100%;
+    }
+  }
   .messageComment {
     justify-content: space-around;
     position: absolute;
     top: 5rem;
     left: 5rem;
-
+    @include mb {
+      position: initial;
+      margin-bottom: 2rem;
+    }
     .messegeWrapper {
       h2 {
         background-color: #84bae0;
@@ -97,6 +165,9 @@ body {
         letter-spacing: 0.5rem;
         font-family: "Franklin Gothic Medium", sans-serif;
         margin-bottom: 1rem;
+        @include mb {
+          font-size: 40px;
+        }
       }
       p {
         font-size: 18px;
@@ -105,14 +176,16 @@ body {
         margin: 0;
       }
     }
-    img {
+    .shachoCommentImage {
       position: absolute;
       top: 13rem;
       transform: rotate(-5deg);
+      @include mb {
+        width: 95%;
+        top: 22rem;
+        transform: initial;
+      }
     }
-  }
-  .shachoImg {
-    margin-right: 5rem;
   }
 }
 
@@ -120,16 +193,25 @@ body {
 
 .employee {
   margin-bottom: 10rem;
-
   h2 {
+    background-color: #84bae0;
     font-size: 95px;
     letter-spacing: 0.5rem;
     font-family: "Franklin Gothic Medium", sans-serif;
     margin-bottom: 5rem;
+    @include mb {
+      font-size: 40px;
+      margin-bottom: 3rem;
+    }
   }
   .employeeList {
     display: flex;
     justify-content: space-evenly;
+    @include mb {
+      flex-direction: column;
+      justify-content: initial;
+      align-items: center;
+    }
     .employeeBox {
       background: white;
       display: flex;
@@ -139,12 +221,21 @@ body {
       }
       .img2 {
         margin-top: 8rem;
+        @include mb {
+          margin-top: 3rem;
+        }
       }
       .img3 {
         margin-top: 16rem;
+        @include mb {
+          margin-top: 3rem;
+        }
       }
       .img4 {
         margin-top: 24rem;
+        @include mb {
+          margin-top: 3rem;
+        }
       }
       .employeeComment {
         width: 300px;
@@ -172,9 +263,16 @@ body {
   .job {
     width: 90%;
     margin: 0 auto;
-    .jobDiscription {
+    @include mb {
+      margin: 0;
+    }
+  }
+  .jobDiscription {
+    line-height: 1.5rem;
+    margin: 2rem 0;
+    @include mb {
+      margin: 2rem auto;
       line-height: 1.5rem;
-      margin: 2rem 0;
     }
   }
   .submit {
@@ -208,7 +306,7 @@ body {
     display: block;
     font-size: 16px;
     padding: 12px 15px;
-    width: 480px;
+    width: 90%;
     transition: 0.8s;
     border-radius: 0;
   }
@@ -238,6 +336,10 @@ body {
   .form-table td {
     border: 1px solid #d7d7d7;
     padding: 20px;
+    @include mb {
+      display: block;
+      border-bottom: none;
+    }
   }
 
   .form-table th {
@@ -249,6 +351,7 @@ body {
     color: white;
   }
 }
+
 // footer
 
 footer {
