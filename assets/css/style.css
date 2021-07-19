@@ -30,11 +30,24 @@ body {
   margin-bottom: 10rem;
 }
 
+@media screen and (max-width: 365px) {
+  .Mv {
+    margin-bottom: 5rem;
+  }
+}
+
 .Mv .MvImage img {
   max-width: 100%;
   max-height: 700px;
   -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+}
+
+@media screen and (max-width: 365px) {
+  .Mv .MvImage img {
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
 }
 
 .Mv .MvComment .imgTop {
@@ -43,10 +56,26 @@ body {
   right: 20rem;
 }
 
+@media screen and (max-width: 365px) {
+  .Mv .MvComment .imgTop {
+    width: 50%;
+    top: 2rem;
+    right: 10rem;
+  }
+}
+
 .Mv .MvComment .imgBottom {
   position: absolute;
   top: 20rem;
   right: 5rem;
+}
+
+@media screen and (max-width: 365px) {
+  .Mv .MvComment .imgBottom {
+    width: 50%;
+    top: 5rem;
+    right: 1rem;
+  }
 }
 
 .about {
@@ -57,6 +86,20 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 10rem;
+}
+
+@media screen and (max-width: 365px) {
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
 }
 
 .about .aboutMessage {
@@ -72,14 +115,47 @@ body {
           justify-content: center;
 }
 
+@media screen and (max-width: 365px) {
+  .about .aboutMessage .aboutPolocyImage {
+    margin: 0 auto 3rem auto;
+  }
+}
+
 .about .aboutMessage p {
   line-height: 3rem;
   letter-spacing: 0.1rem;
 }
 
+@media screen and (max-width: 365px) {
+  .about .aboutMessage p {
+    width: 95%;
+    margin: 0 auto;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .about .aboutMessage img {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
 .about .aboutImage {
   -webkit-clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
           clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+@media screen and (max-width: 365px) {
+  .about .aboutImage {
+    margin: 0 1rem;
+  }
+}
+
+.about .aboutImage img {
+  width: 100%;
 }
 
 .message {
@@ -93,12 +169,43 @@ body {
   margin-bottom: 10rem;
 }
 
+@media screen and (max-width: 365px) {
+  .message {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 10rem;
+  }
+}
+
+.message .shachoWrapper {
+  margin-right: 5rem;
+}
+
+@media screen and (max-width: 365px) {
+  .message .shachoWrapper {
+    margin: 0 1rem;
+  }
+}
+
+.message .shachoWrapper .shachoFaceImage {
+  width: 100%;
+}
+
 .message .messageComment {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: absolute;
   top: 5rem;
   left: 5rem;
+}
+
+@media screen and (max-width: 365px) {
+  .message .messageComment {
+    position: initial;
+    margin-bottom: 2rem;
+  }
 }
 
 .message .messageComment .messegeWrapper h2 {
@@ -109,6 +216,12 @@ body {
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 365px) {
+  .message .messageComment .messegeWrapper h2 {
+    font-size: 40px;
+  }
+}
+
 .message .messageComment .messegeWrapper p {
   font-size: 18px;
   color: #9fa0a0;
@@ -116,15 +229,20 @@ body {
   margin: 0;
 }
 
-.message .messageComment img {
+.message .messageComment .shachoCommentImage {
   position: absolute;
   top: 13rem;
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
 }
 
-.message .shachoImg {
-  margin-right: 5rem;
+@media screen and (max-width: 365px) {
+  .message .messageComment .shachoCommentImage {
+    width: 95%;
+    top: 22rem;
+    -webkit-transform: initial;
+            transform: initial;
+  }
 }
 
 .employee {
@@ -132,10 +250,18 @@ body {
 }
 
 .employee h2 {
+  background-color: #84bae0;
   font-size: 95px;
   letter-spacing: 0.5rem;
   font-family: "Franklin Gothic Medium", sans-serif;
   margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 365px) {
+  .employee h2 {
+    font-size: 40px;
+    margin-bottom: 3rem;
+  }
 }
 
 .employee .employeeList {
@@ -145,6 +271,21 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+@media screen and (max-width: 365px) {
+  .employee .employeeList {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .employee .employeeList .employeeBox {
@@ -166,12 +307,30 @@ body {
   margin-top: 8rem;
 }
 
+@media screen and (max-width: 365px) {
+  .employee .employeeList .employeeBox .img2 {
+    margin-top: 3rem;
+  }
+}
+
 .employee .employeeList .employeeBox .img3 {
   margin-top: 16rem;
 }
 
+@media screen and (max-width: 365px) {
+  .employee .employeeList .employeeBox .img3 {
+    margin-top: 3rem;
+  }
+}
+
 .employee .employeeList .employeeBox .img4 {
   margin-top: 24rem;
+}
+
+@media screen and (max-width: 365px) {
+  .employee .employeeList .employeeBox .img4 {
+    margin-top: 3rem;
+  }
 }
 
 .employee .employeeList .employeeBox .employeeComment {
@@ -201,9 +360,22 @@ body {
   margin: 0 auto;
 }
 
-.entry .job .jobDiscription {
+@media screen and (max-width: 365px) {
+  .entry .job {
+    margin: 0;
+  }
+}
+
+.entry .jobDiscription {
   line-height: 1.5rem;
   margin: 2rem 0;
+}
+
+@media screen and (max-width: 365px) {
+  .entry .jobDiscription {
+    margin: 2rem auto;
+    line-height: 1.5rem;
+  }
 }
 
 .entry .submit {
@@ -236,7 +408,7 @@ body {
   display: block;
   font-size: 16px;
   padding: 12px 15px;
-  width: 480px;
+  width: 90%;
   -webkit-transition: 0.8s;
   transition: 0.8s;
   border-radius: 0;
@@ -283,6 +455,14 @@ body {
 .entry .form-table td {
   border: 1px solid #d7d7d7;
   padding: 20px;
+}
+
+@media screen and (max-width: 365px) {
+  .entry .form-table th,
+  .entry .form-table td {
+    display: block;
+    border-bottom: none;
+  }
 }
 
 .entry .form-table th {
