@@ -362,6 +362,7 @@ body {
 
 @media screen and (max-width: 365px) {
   .entry .job {
+    width: 100%;
     margin: 0;
   }
 }
@@ -369,6 +370,7 @@ body {
 .entry .jobDiscription {
   line-height: 1.5rem;
   margin: 2rem 0;
+  text-align: center;
 }
 
 @media screen and (max-width: 365px) {
@@ -449,12 +451,14 @@ body {
 
 .entry .form-table {
   width: 100%;
+  margin: 0 auto;
 }
 
 .entry .form-table th,
 .entry .form-table td {
   border: 1px solid #d7d7d7;
-  padding: 20px;
+  padding: 20px 0;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 365px) {
